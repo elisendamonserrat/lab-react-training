@@ -68,7 +68,7 @@ function App() {
             number="0123456789016984"
             expirationMonth={12}
             expirationYear={2019}
-            bank="Name of the Bank"
+            bank="LaCaixa"
             owner="Firstname Lastname"
             bgColor="#ddbb55"
             color="white" 
