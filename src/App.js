@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import BoxColor from './components/BoxColor';
+import Container from './components/Container';
+import CreditCard from './components/CreditCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
@@ -17,6 +19,7 @@ function App() {
           birth={new Date("1992-07-14")}
           picture="https://randomuser.me/api/portraits/men/44.jpg"
       /> 
+
       <IdCard
         lastName='Delores '
         firstName='Obrien'
@@ -25,17 +28,28 @@ function App() {
         birth={new Date("1988-05-11")}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
+
       <h2 className="font-bold text-xl">Iteration 2 | Component: Greetings</h2>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
+
       <h2 className="font-bold text-xl">Iteration 3 | Component: Random</h2>
       <Random min={1} max={6}/>
       <Random min={1} max={100}/>
+
       <h2 className="font-bold text-xl">Iteration 4 | Component: BoxColor</h2>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
+
+      <h2 className="font-bold text-xl">Iteration 5 | Component: CreditCard</h2>
+      < Container>
+        < CreditCard backgroundColor="#ff0000" />
+      </Container>
+
+
     </div>
   );
 }
 
 export default App;
+
