@@ -16,7 +16,7 @@ export default function Rating(props) {
 
     return (
         <div>
-            <p>Rating: {starsArray} ({props.children}/5)</p>
+            <p>{starsArray}</p>
         </div>
     )
 }
