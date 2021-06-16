@@ -11,7 +11,7 @@ import Rating from './components/Rating';
 
 function App() {
   return (
-    <div className="container mx-auto my-8">
+    <div className="App container mx-auto my-8">
       <h2 className="font-bold text-xl">Iteration 1 | Component: IdCard</h2>
       <IdCard
           lastName='Doe'
