@@ -8,6 +8,7 @@ import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
 import Random from './components/Random';
 import Rating from './components/Rating';
+import LikeButton from './components/LikeButton';
 
 function App() {
   return (
@@ -107,6 +108,13 @@ function App() {
               licensePlate: "BE33ER"
              }} 
           />
+      </Container>
+
+      <h2 className="font-bold text-xl">Iteration 8 | State: LikeButton</h2>
+      < Container col="inline-flex">
+        <LikeButton />
+        <LikeButton />
+ 
       </Container>
 
 
