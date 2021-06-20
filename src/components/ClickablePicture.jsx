@@ -29,7 +29,7 @@ export class ClickablePicture extends Component {
         const { displayImg } = this.state;
         return (
             <div>
-                <img src={displayImg} alt="Alan profile" onClick={this.handleOnClick}/>
+                <img className="w-1/2" src={displayImg} alt="Alan profile" onClick={this.handleOnClick}/>
             </div>
         )
     }

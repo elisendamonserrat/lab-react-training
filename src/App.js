@@ -10,6 +10,7 @@ import Random from './components/Random';
 import Rating from './components/Rating';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -125,6 +126,11 @@ function App() {
         />
       </Container>
 
+      <h2 className="font-bold text-xl">Iteration 10 | State: Dice</h2>
+      <Container col="inline-flex">
+        <Dice />
+
+      </Container>
 
 
 
