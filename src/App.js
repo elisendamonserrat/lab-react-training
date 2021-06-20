@@ -12,6 +12,7 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 function App() {
   return (
@@ -134,16 +135,22 @@ function App() {
 
       <h2 className="font-bold text-xl">Iteration 11 | State: Carousel</h2>
       <Container col="inline-flex">
-      <Carousel
-          imgs={[
-            'https://randomuser.me/api/portraits/women/1.jpg',
-            'https://randomuser.me/api/portraits/men/1.jpg',
-            'https://randomuser.me/api/portraits/women/2.jpg',
-            'https://randomuser.me/api/portraits/men/2.jpg'
-          ]}
-       />
-        
+        <Carousel
+            imgs={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+        />
       </Container>
+
+      <h2 className="font-bold text-xl">Iteration 12 | List and Keys | NumbersTable</h2>
+      <Container col="inline-flex">
+        <NumbersTable limit={12} />
+      </Container>
+
+
 
 
 
