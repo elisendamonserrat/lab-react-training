@@ -11,6 +11,7 @@ import Rating from './components/Rating';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -129,7 +130,19 @@ function App() {
       <h2 className="font-bold text-xl">Iteration 10 | State: Dice</h2>
       <Container col="inline-flex">
         <Dice />
+      </Container>
 
+      <h2 className="font-bold text-xl">Iteration 11 | State: Carousel</h2>
+      <Container col="inline-flex">
+      <Carousel
+          imgs={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+       />
+        
       </Container>
 
 
