@@ -9,6 +9,7 @@ import IdCard from './components/IdCard';
 import Random from './components/Random';
 import Rating from './components/Rating';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -114,8 +115,17 @@ function App() {
       < Container col="inline-flex">
         <LikeButton />
         <LikeButton />
- 
       </Container>
+
+      <h2 className="font-bold text-xl">Iteration 9: State: ClickablePicture</h2>
+      < Container col="inline-flex">
+        <ClickablePicture
+          img='/img/persons/maxence.png'
+          imgClicked='/img/persons/maxence-glasses.png'
+        />
+      </Container>
+
+
 
 
 
