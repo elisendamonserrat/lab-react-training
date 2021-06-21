@@ -23,7 +23,7 @@ export class NumbersTable extends Component {
             <div className="flex wrap w-1/2">
                 {numbersTable.map((element, index) => {
                     return (
-                        <div className="border-2 border-black w-1/6 px-4 py-4 text-center" 
+                        <div className="border-2 border-black w-1/2 px-4 py-4 text-center" 
                         key={index} 
                         style={{background: this.evenNumbers(element)}}
                         > 
