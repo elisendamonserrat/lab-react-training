@@ -2,7 +2,16 @@ import React, { Component } from 'react'
 import profiles from './../data/berlin.json';
 
 export class FaceBook  extends Component {
+
+    countriesArray = () => {
+        const countriesArray = profiles.map(profile => profile.country);
+        const countriesUnique = countriesArray.filter((item, index) => countriesArray.indexOf(item) === index);
+        return countriesUnique;
+    }
+
+
     render() {
+        console.log('countries array', this.countriesArray())
         return (
             <div className="w-3/5">
               {profiles.map((profile) => {
