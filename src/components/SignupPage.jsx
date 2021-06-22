@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PostSignupMessage from './PostSignupMessage';
 
 export class SignupPage extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ export class SignupPage extends Component {
             nationality: '',
             emailValidation: '',
             passwordValidation: '',
+            showMessage: false,
         }
     }
 
@@ -45,6 +47,7 @@ export class SignupPage extends Component {
             this.setState({
                 emailValidation: this.validateEmail(email),
                 passwordValidation: this.validatePassword(password),
+                showMessage: !this.state.showMessage,
             })
         } else {
             return alert('Please fill all the fields to sign up!')
@@ -52,8 +55,9 @@ export class SignupPage extends Component {
     }
 
     render() {
-        const { email, password, nationality, emailValidation, passwordValidation } = this.state;
+        const { email, password, nationality, emailValidation, passwordValidation, showMessage } = this.state;
         return (
+        <div className="flex flex-col w-full">
             <form className="flex flex-col w-2/4">
                 <label className="mb-2 text-lg">Email</label>
                 <input 
@@ -93,6 +97,8 @@ export class SignupPage extends Component {
 
                 <button className="mb-2 border-2 rounded-md p-2 bg-blue-200" type="submit" onClick={this.handleSubmit}>Sign up</button>
             </form>
+            { showMessage && <PostSignupMessage nationality={nationality} email={email} />}
+        </div>
         )
     }
 }
