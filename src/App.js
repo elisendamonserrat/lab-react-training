@@ -15,6 +15,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook ';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
@@ -168,6 +169,14 @@ function App() {
       </h2>
       <Container col="inline-flex">
         <SignupPage />
+      </Container>
+
+      <h2 className="font-bold text-xl">
+        Iteration 16 | Lifting State Up - RGBColorPicker
+      </h2>
+      <Container col="inline-flex">
+        <RGBColorPicker />
+        
       </Container>
 
     </div>
